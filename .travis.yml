@@ -31,3 +31,15 @@ env:
   - secure: asqyeUGDEf1oYutUMfhz2t48SKXW/oNd3i29W/csPZaxJbv9Sx1kZbpSqd6LYPtOLB3yNyVNjzFe08fmN84i4Szq/NCtmIwOKBjdbZbT4G1+CH0apQ4HlqdKmZKyrrwtL5twcx1lLNk6YQyDZrSqgUr5FGUAZmNH1eCkdOLCOuk=
   - secure: LK3vPyh4mPEy9snNeyxuWY1hwB7vWzmzv4UdCZCRcHLUKB5ZPLeDSe42OF4JNtk2FSXOGVC3AG37vp+blFqcbzcWi1Qkt9U+iw8ne17+/gimOkWn9Slr0Do9x8m2oyr5pLKoVdacEQF1QYcF+MYUVVF7Kaz9U1KC1twUK/vUJF4=
   - secure: NlWxWYhdMAAiUuEEf33SwguxvMinsF8/eI4ieVVNPzdxWTlASlGdlpZMnL4cio7WHlqz+ULnKLYNkM/mF49tpITXWzHc5kA/PfJ1AMNsLgSZGalxnDvedsmOsutV/J822Npy1HSBtg+HkWJpszb4/qiZ+TrwVDFnBFCXho36UrY=
+notifications:
+  email:
+    recipients:
+      - msabramo+freetds_travis_ci@gmail.com
+      # - other@example.com
+    on_success: always  # [always|never|change] # default: change
+    on_failure: always  # [always|never|change] # default: always
+  irc:
+    channels:
+      - "chat.freenode.net#freetds"
+    # on_success: [always|never|change] # default: always
+    # on_failure: [always|never|change] # default: always
